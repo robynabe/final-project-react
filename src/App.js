@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header";
+import Form from "./Form";
+import Conversion from "./Conversion";
+import Date from "./Date";
+import Details from "./Details";
+import Footer from "./Footer";
+
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <section className="section-1">
+        <div className="container">
+          <div className="row">
+            <Header />
+            <div className="col-sm">
+              <Form />
+              <p className="date-time">
+                <Date />
+              </p>
+              <Details />
+            </div>
+          </div>
+          <Conversion />
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 export default App;
