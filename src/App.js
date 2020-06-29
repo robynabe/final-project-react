@@ -6,6 +6,7 @@ import Conversion from "./Conversion";
 import Date from "./Date";
 import Details from "./Details";
 import Footer from "./Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./index.css";
 
