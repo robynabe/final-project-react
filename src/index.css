@@ -1,10 +1,11 @@
 body {
   background-color: #f2f7ff;
 }
+
 section {
   display: block;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
   padding: 25px 20px;
   background-color: #ffffff;
   max-width: 700px;
@@ -69,7 +70,7 @@ button {
   padding: 10px 15px;
   text-align: center;
   background: #f2f7ff;
-  border-radius: 20px;
+  border-radius: 30px;
   border-color: #001e47;
   border-width: 2px;
 }
@@ -79,9 +80,7 @@ button:hover {
   color: #ffffff;
   transition: all ease-in-out 150ms;
 }
-.section-2 {
-  margin-top: 10px;
-}
+
 .sun-time {
   margin: 0 auto;
   text-align: center;
@@ -90,7 +89,8 @@ button:hover {
 }
 footer {
   display: block;
-  margin-top: 270px;
+  margin: 0 auto;
+  margin-top: 5px;
   max-width: 700px;
   text-align: center;
   color: #001e47;
