@@ -34,20 +34,21 @@ p {
   display: block;
   margin-left: 12px;
   margin-bottom: 8px;
-
   color: #001e47;
 }
-input {
+.text-input {
   display: inline;
   margin: auto;
   margin-right: 6px;
   border-color: #001e47;
-  border-radius: 4px;
+  border-radius: 8px;
   border-width: 1.5px;
 }
 .submit-button {
   background-color: #f2f7ff;
   color: #001e47;
+  border-radius: 8px;
+  padding: 1px 8px;
 }
 .date-time {
   margin: 20px 0 20px 0px;
@@ -65,12 +66,13 @@ ul {
   max-height: 40px;
 }
 
-button {
+.button-F,
+.button-C {
   margin: 5px;
   padding: 10px 15px;
   text-align: center;
   background: #f2f7ff;
-  border-radius: 30px;
+  border-radius: 20px;
   border-color: #001e47;
   border-width: 2px;
 }

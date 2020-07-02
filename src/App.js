@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./Header";
+import Weather from "./Weather";
 import Form from "./Form";
 import Conversion from "./Conversion";
 import Date from "./Date";
@@ -13,10 +13,10 @@ import "./index.css";
 function App() {
   return (
     <div className="body">
-      <section className="section-1">
+      <section className="section">
         <div className="container">
           <div className="row">
-            <Header />
+            <Weather />
             <div className="col-sm">
               <Form />
               <p className="date-time">
