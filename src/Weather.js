@@ -7,22 +7,23 @@ import Conversion from "./Conversion";
 import { data } from "jquery";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleSubmit(response) {
     console.log(response.data);
     setWeatherData({
+      ready: true,
       temp: Math.round(response.data.main.temp),
       city: response.data.name,
       description: response.data.weather.description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      feels: response.data.main.feels_like,
+      feels: Math.round(response.data.main.feels_like),
+      iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
     });
     setReady(true);
   }
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="body">
         <section className="section">
@@ -31,11 +32,8 @@ export default function Weather() {
               <div>
                 <div class="col-sm">
                   <h1>{weatherData.city}</h1>
-                  <p>Cloudy</p>
-                  <img
-                    src="http://openweathermap.org/img/wn/10d@2x.png"
-                    alt="weather icon"
-                  />
+                  <p className="text-capitalize">{weatherData.description}</p>
+                  <img src={weatherData.iconUrl} alt="weather icon" />
                   <h2>{weatherData.temp}</h2>
                   <span class="degrees">°C</span>
                 </div>
@@ -52,7 +50,7 @@ export default function Weather() {
                       alt="wind-icon"
                       class="detail-icons"
                     />
-                    {weatherData.wind} km/hr
+                    Wind Speed: {weatherData.wind}km/hr
                   </li>
                   <li>
                     <img
@@ -60,7 +58,7 @@ export default function Weather() {
                       alt="humidity-icon"
                       class="detail-icons"
                     />
-                    {weatherData.humidity} %
+                    Humidity: {weatherData.humidity}%
                   </li>
                   <li>
                     <img
@@ -68,7 +66,7 @@ export default function Weather() {
                       alt="real"
                       class="detail-icons"
                     />
-                    Feels like {weatherData.real}
+                    Feels like: {weatherData.feels}
                     °C
                   </li>
                 </ul>
