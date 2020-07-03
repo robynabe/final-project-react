@@ -6,11 +6,11 @@ export default function Form() {
       <input
         type="text"
         placeholder="search city name..."
-        class="text-input"
+        className="text-input"
         autoComplete="off"
         autoFocus="on"
       />
-      <input type="submit" value="search" class="submit-button" />
+      <input type="submit" value="search" className="submit-button" />
     </form>
   );
 }
