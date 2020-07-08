@@ -1,11 +1,9 @@
 import React from "react";
-import Form from "./Form";
 import Date from "./Date";
 
 export default function Details(props) {
   return (
     <div className="col-sm">
-      <Form />
       <p className="date-time">
         {" "}
         <strong>

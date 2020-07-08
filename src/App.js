@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 function App() {
-  return <Weather />;
+  return <Weather defaultCity="Hawaii" />;
 }
 
 const rootElement = document.getElementById("root");

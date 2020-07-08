@@ -1,11 +1,32 @@
 body {
   background-color: #f2f7ff;
 }
+form {
+  display: block;
+  margin-top: 50px;
+  padding: auto;
+  text-align: center;
+}
+.text-input {
+  display: inline;
+  margin: auto;
+  margin-right: 6px;
+  padding: 4px 25px;
+  border-color: #001e47;
+  border-radius: 8px;
+  border-width: 1.5px;
+}
+.submit-button {
+  background-color: #f2f7ff;
+  color: #001e47;
+  border-radius: 8px;
+  padding: 1px 8px;
+}
 
 section {
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 25px 20px;
   background-color: #ffffff;
   max-width: 700px;
@@ -35,20 +56,6 @@ p {
   margin-left: 12px;
   margin-bottom: 8px;
   color: #001e47;
-}
-.text-input {
-  display: inline;
-  margin: auto;
-  margin-right: 6px;
-  border-color: #001e47;
-  border-radius: 8px;
-  border-width: 1.5px;
-}
-.submit-button {
-  background-color: #f2f7ff;
-  color: #001e47;
-  border-radius: 8px;
-  padding: 1px 8px;
 }
 .date-time {
   margin: 20px 0 20px 0px;
@@ -92,7 +99,7 @@ button:hover {
 footer {
   display: block;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 20px;
   max-width: 700px;
   text-align: center;
   color: #001e47;
