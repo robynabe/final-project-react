@@ -35,6 +35,9 @@ section {
   border-radius: 20px;
   border-width: 3px;
 }
+.section-2 {
+  text-align: center;
+}
 h1 {
   display: block;
   margin: 10px auto;

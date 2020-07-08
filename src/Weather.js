@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import axios from "axios";
 import Conversion from "./Conversion";
 import Details from "./Details";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -47,7 +48,7 @@ export default function Weather(props) {
           />
           <input type="submit" value="search" className="submit-button" />
         </form>
-        <section className="section">
+        <section className="section-1">
           <div className="container">
             <div className="row">
               <div>
@@ -64,6 +65,7 @@ export default function Weather(props) {
             <Conversion celsius={weatherData.temp} />
           </div>
         </section>
+        <Forecast city={weatherData.city} />
         <Footer />
       </div>
     );
