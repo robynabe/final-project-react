@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Conversion() {
+export default function Conversion(props) {
   return (
-    <div>
+    <div className="Conversion">
+      <span className="temp"></span>
       <button className="button-F">°F</button>
       <button className="button-C">°C</button>
     </div>

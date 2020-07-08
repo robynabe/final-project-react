@@ -18,7 +18,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       feels: Math.round(response.data.main.feels_like),
-      iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function search() {
@@ -61,7 +61,7 @@ export default function Weather(props) {
               </div>
               <Details data={weatherData} />
             </div>
-            <Conversion />
+            <Conversion celsius={weatherData.temp} />
           </div>
         </section>
         <Footer />
