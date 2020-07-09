@@ -7,7 +7,7 @@ export default function Details(props) {
       <p className="date-time">
         {" "}
         <strong>
-          <Date date={props.data.date} />
+          <Date className="current-date" date={props.data.date} />
         </strong>
       </p>
       <ul>

@@ -61,14 +61,22 @@ p {
   color: #001e47;
 }
 .date-time {
-  margin: 20px 0 20px 0px;
+  margin: 30px 0 10px 10px;
+  text-align: center;
 }
 ul {
-  margin-top: 20px;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 40px;
   list-style: none;
   text-align: left;
   line-height: 30px;
   color: #001e47;
+  border-style: solid;
+  border-color: #001e47;
+  border-width: 2px;
+  border-radius: 20px;
+  float: right;
 }
 
 .detail-icons {
@@ -91,13 +99,6 @@ button:hover {
   background-color: #001e47;
   color: #ffffff;
   transition: all ease-in-out 150ms;
-}
-
-.sun-time {
-  margin: 0 auto;
-  text-align: center;
-  color: #001e47;
-  font-size: larger;
 }
 footer {
   display: block;
