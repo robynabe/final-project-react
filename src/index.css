@@ -1,28 +1,6 @@
 body {
   background-color: #f2f7ff;
 }
-form {
-  display: block;
-  margin-top: 50px;
-  padding: auto;
-  text-align: center;
-}
-.text-input {
-  display: inline;
-  margin: auto;
-  margin-right: 6px;
-  padding: 4px 25px;
-  border-color: #001e47;
-  border-radius: 8px;
-  border-width: 1.5px;
-}
-.submit-button {
-  background-color: #f2f7ff;
-  color: #001e47;
-  border-radius: 8px;
-  padding: 1px 8px;
-}
-
 section {
   display: block;
   margin: 0 auto;
@@ -37,68 +15,6 @@ section {
 }
 .section-2 {
   text-align: center;
-}
-h1 {
-  display: block;
-  margin: 10px auto;
-  margin-bottom: 5px;
-  padding: 10px;
-  font-size: 40px;
-  color: #001e47;
-}
-h2 {
-  display: inline;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 40px;
-  color: #001e47;
-}
-
-p {
-  display: block;
-  margin-left: 12px;
-  margin-bottom: 8px;
-  color: #001e47;
-}
-.date-time {
-  margin: 30px 0 10px 10px;
-  text-align: center;
-}
-ul {
-  padding: 20px;
-  margin: 10px;
-  margin-top: 40px;
-  list-style: none;
-  text-align: left;
-  line-height: 30px;
-  color: #001e47;
-  border-style: solid;
-  border-color: #001e47;
-  border-width: 2px;
-  border-radius: 20px;
-  float: right;
-}
-
-.detail-icons {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.button-F,
-.button-C {
-  margin: 5px;
-  padding: 10px 15px;
-  text-align: center;
-  background: #f2f7ff;
-  border-radius: 20px;
-  border-color: #001e47;
-  border-width: 2px;
-}
-.submit-button:hover,
-button:hover {
-  background-color: #001e47;
-  color: #ffffff;
-  transition: all ease-in-out 150ms;
 }
 footer {
   display: block;

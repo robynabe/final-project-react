@@ -1,0 +1,30 @@
+form {
+  display: block;
+  margin-top: 50px;
+  padding: auto;
+  text-align: center;
+}
+.text-input {
+  display: inline;
+  margin: auto;
+  margin-right: 6px;
+  padding: 4px 25px;
+  border-color: #001e47;
+  border-radius: 8px;
+  border-width: 1.5px;
+}
+.submit-button {
+  background-color: #f2f7ff;
+  color: #001e47;
+  border-radius: 8px;
+  padding: 1px 8px;
+}
+h1 {
+  display: block;
+  margin: 10px auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 40px;
+  color: #001e47;
+  float: left;
+}

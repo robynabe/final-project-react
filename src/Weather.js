@@ -40,7 +40,7 @@ export default function Weather(props) {
         <form className="form" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="search city name..."
+            placeholder="Search for a city..."
             className="text-input"
             autoComplete="off"
             autoFocus="on"
@@ -52,20 +52,20 @@ export default function Weather(props) {
           <div className="container">
             <div className="row">
               <div>
-                <div className="col-sm">
+                <div className="col-sm city-temp">
                   <h1>{weatherData.city}</h1>
                   <p className="text-capitalize">{weatherData.description}</p>
                   <img src={weatherData.iconUrl} alt="weather icon" />
-                  <h2>{weatherData.temp}</h2>
-                  <span className="degrees">°C</span>
+                  <div>
+                    <Conversion temp={weatherData.temp} />
+                  </div>
                 </div>
               </div>
               <Details data={weatherData} />
             </div>
-            <Conversion celsius={weatherData.temp} />
           </div>
         </section>
-        <Forecast city={weatherData.city} />
+        <Forecast icon={weatherData.iconUrl} city={weatherData.city} />
         <Footer />
       </div>
     );
