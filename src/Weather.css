@@ -21,10 +21,11 @@ form {
 }
 h1 {
   display: block;
-  margin: 10px auto;
   margin-bottom: 5px;
   padding: 10px;
   font-size: 40px;
   color: #001e47;
-  float: left;
+}
+.city-temp {
+  padding: auto;
 }

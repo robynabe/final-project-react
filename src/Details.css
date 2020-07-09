@@ -1,3 +1,14 @@
+p {
+  display: block;
+  margin-left: 12px;
+  margin-bottom: 8px;
+  color: #001e47;
+}
+.date-time {
+  margin: 30px 30px 10px 30px;
+  text-align: center;
+  float: right;
+}
 ul {
   padding: 20px;
   margin: 10px;
@@ -11,18 +22,4 @@ ul {
   border-width: 2px;
   border-radius: 20px;
   float: right;
-}
-.date-time {
-  margin: 30px 0 10px 10px;
-  text-align: center;
-}
-.detail-icons {
-  max-width: 40px;
-  max-height: 40px;
-}
-p {
-  display: block;
-  margin-left: 12px;
-  margin-bottom: 8px;
-  color: #001e47;
 }

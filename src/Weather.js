@@ -5,17 +5,20 @@ import Conversion from "./Conversion";
 import Details from "./Details";
 import Forecast from "./Forecast";
 
+import "./Weather.css";
+
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       temp: Math.round(response.data.main.temp),
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      description: response.data.weather.description,
+      description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       feels: Math.round(response.data.main.feels_like),
@@ -54,7 +57,6 @@ export default function Weather(props) {
               <div>
                 <div className="col-sm city-temp">
                   <h1>{weatherData.city}</h1>
-                  <p className="text-capitalize">{weatherData.description}</p>
                   <img src={weatherData.iconUrl} alt="weather icon" />
                   <div>
                     <Conversion temp={weatherData.temp} />

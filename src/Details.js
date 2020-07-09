@@ -1,16 +1,24 @@
 import React from "react";
 import Date from "./Date";
+import "./Details.css";
 
 export default function Details(props) {
   return (
     <div className="col-sm">
       <p className="date-time">
-        {" "}
         <strong>
           <Date className="current-date" date={props.data.date} />
         </strong>
       </p>
       <ul>
+        <li>
+          <img
+            src={props.data.iconUrl}
+            alt="weather description"
+            className="detail-icons"
+          />
+          {props.data.description}
+        </li>
         <li>
           <img
             src="http://openweathermap.org/img/wn/50d@2x.png"
@@ -21,7 +29,7 @@ export default function Details(props) {
         </li>
         <li>
           <img
-            src="http://openweathermap.org/img/wn/02d@2x.png"
+            src="http://openweathermap.org/img/wn/01d@2x.png"
             alt="humidity-icon"
             className="detail-icons"
           />
