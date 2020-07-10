@@ -18,7 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       feels: Math.round(response.data.main.feels_like),
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -62,11 +62,14 @@ export default function Weather(props) {
                   </div>
                 </div>
               </div>
-              <Details data={weatherData} />
+              <div className="col-sm">
+                <Details data={weatherData} />
+              </div>
             </div>
           </div>
+          <Forecast city={weatherData.city} />
         </section>
-        <Forecast city={weatherData.city} />
+
         <Footer />
       </div>
     );

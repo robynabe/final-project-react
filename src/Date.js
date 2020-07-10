@@ -28,9 +28,14 @@ export default function Date(props) {
   let day = days[props.date.getDay()];
   let date = props.date.getDate();
   let year = props.date.getFullYear();
+  let hour = props.date.getHours();
+  let minute = props.date.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
   return (
     <div>
-      {day} {month} {date}, {year}
+      {day} {month} {date}, {year} {hour}:{minute}
     </div>
   );
 }
