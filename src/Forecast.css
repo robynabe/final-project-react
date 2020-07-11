@@ -1,5 +1,10 @@
 .Forecast {
-  margin-top: 10px;
+  margin-top: 20px;
   color: #001e47;
   text-align: center;
+}
+.section-2 {
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+  color: #001e47;
 }

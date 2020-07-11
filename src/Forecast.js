@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherForecast from "./WeatherForecast";
 import "./Forecast.css";
+import Prediction from "./Prediction";
 
 export default function Forecast(props) {
   const [loaded, setloaded] = useState(false);
@@ -27,10 +28,12 @@ export default function Forecast(props) {
           <WeatherForecast data={forecast.list[7]} />
         </div>
         <section className="section-2">
-          <WeatherForecast data={forecast.list[15]} />
-          <WeatherForecast data={forecast.list[23]} />
-          <WeatherForecast data={forecast.list[31]} />
-          <WeatherForecast data={forecast.list[39]} />
+          <div className="next-day row">
+            <Prediction data={forecast.list[15]} />
+            <Prediction data={forecast.list[23]} />
+            <Prediction data={forecast.list[31]} />
+            <Prediction data={forecast.list[39]} />
+          </div>
         </section>
       </div>
     );
