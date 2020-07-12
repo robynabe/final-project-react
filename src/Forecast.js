@@ -7,7 +7,6 @@ import Prediction from "./Prediction";
 export default function Forecast(props) {
   const [loaded, setloaded] = useState(false);
   const [forecast, setForecast] = useState(null);
-  const [icon, setIcon] = useState(null);
 
   function handleForecastResponse(response) {
     setForecast(response.data);
